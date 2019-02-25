@@ -37,6 +37,7 @@ module.exports = function(app, db) {
     res.send("success");
   });
   app.post('/login', function(req, res) {
+    console.log("login route");
     if(req.body.email && req.body.password) {
       var email = req.body.email;
       var password = req.body.password;
